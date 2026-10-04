@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Static and Fixed</title>
+    <style>
+        body {
+            height: 2000px; /* To enable scrolling */
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #add8e6;
+            border: 2px solid #00008b;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+        }
+        .static-box {
+            position: static;
+        }
+        .fixed-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #90ee90;
+            border-color: #006400;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="box static-box">Static</div>
+    <p>This box is `static`. It follows the normal document flow.</p>
+   
+    <div class="fixed-box box">Fixed</div>
+    <p>This box is `fixed`. It stays in the same position on the screen, even when you scroll.</p>
+ 
+</body>
+</html>
+Relative and Absolute Positioning:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative and Absolute</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .relative-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 2px solid #00008b;
+            background-color: #f0f0f0;
+            margin-top: 50px;
+        }
+        .box {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #add8e6;
+            border: 2px solid #00008b;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            background-color: #90ee90;
+            border: 2px solid #006400;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="relative-container">
+        <div class="box absolute-box">Absolute</div>
+        <p>This box is `absolute`. It is positioned relative to its parent container.</p>
+    </div>
+ 
+    <div class="box relative-box">Relative</div>
+    <p>This box is `relative`. It is shifted from its normal position, but still occupies its original space in the document flow.</p>
+ 
+</body>
+</html>
